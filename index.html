@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment Management System</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Apartment Management System</h1>
+    </header>
+    <div class="container">
+      <section>
+        <h2>List of Apartments</h2>
+        <ul class="apartment-list">
+          <li>Apartment 101 - 3 Bedrooms, 2 Bathrooms</li>
+          <li>Apartment 102 - 2 Bedrooms, 1 Bathroom</li>
+          <!-- Add more apartments as needed -->
+        </ul>
+      </section>
+      <section>
+        <h2>Add New Apartment</h2>
+        <form id="add-apartment-form">
+          <div>
+            <label for="apartment-number">Apartment Number:</label>
+            <input type="text" id="apartment-number" name="apartment-number" required />
+          </div>
+          <div>
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input type="number" id="bedrooms" name="bedrooms" required />
+          </div>
+          <div>
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input type="number" id="bathrooms" name="bathrooms" required />
+          </div>
+          <div>
+            <button type="submit">Add Apartment</button>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2>Tenant Information</h2>
+        <ul class="tenant-list">
+          <li>John Doe - Apartment 101</li>
+          <li>Jane Smith - Apartment 102</li>
+          <!-- Add more tenants as needed -->
+        </ul>
+      </section>
+      <section>
+        <h2>Add New Tenant</h2>
+        <form id="add-tenant-form">
+          <div>
+            <label for="tenant-name">Tenant Name:</label>
+            <input type="text" id="tenant-name" name="tenant-name" required />
+          </div>
+          <div>
+            <label for="tenant-apartment">Apartment Number:</label>
+            <select id="tenant-apartment" name="tenant-apartment" required>
+              <option value="101">101</option>
+              <option value="102">102</option>
+              <!-- Add more apartment options as needed -->
+            </select>
+          </div>
+          <div>
+            <button type="submit">Add Tenant</button>
+          </div>
+        </form>
+      </section>
+      <section>
+        <h2>Apartment Status</h2>
+        <div class="apartment-grid">
+          <div class="apartment-box" data-details="Apartment 101 - John Doe">101</div>
+          <div class="apartment-box issue" data-details="Apartment 102 - Jane Smith">102</div>
+          <div class="apartment-box" data-details="Apartment 103 - Vacant">103</div>
+          <div class="apartment-box issue" data-details="Apartment 104 - Maintenance Required">104</div>
+          <div class="apartment-box" data-details="Apartment 105 - Vacant">105</div>
+          <!-- Add more apartment boxes as needed -->
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
