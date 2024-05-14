@@ -1,4 +1,4 @@
-## 🏢 Apartment Management System Roadmap (Beginner-friendly, with Optional Payment Integration) 🚀
+## 🏢 Apartment Management System Roadmap (Optional Payment Integration) 🚀
 
 ### 1. Project Setup
 - [ ] 🛠️ Set up a new Angular project in Visual Studio Code.
