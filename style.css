@@ -82,7 +82,7 @@ form button:hover {
 }
 .apartment-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   margin-top: 20px;
 }
@@ -93,33 +93,10 @@ form button:hover {
   border-radius: 8px;
   border: 2px solid transparent;
   position: relative;
-  overflow: hidden;
-  background: linear-gradient(90deg, #87ceeb, #6bb6d6, #5dade2, #4682b4, #ffc0cb, #ffb6c1, #ff69b4, #ff1493);
-  background-size: 800% 800%;
-  animation: gradient 100s ease infinite;
 }
 .apartment-box.issue {
-  border: 3px solid;
-  background: linear-gradient(60deg, #ff7f50, #ff8247, #ffa07a, #ffa500, #ffd700, #ff8c00, #cd853f, #8b4513);
-  background-size: 800% 100%;
-  animation: gradient 150s ease infinite;
-}
-.apartment-box::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(270deg, #007bff, #00ff7f, #ff69b4);
-  background-size: 400% 400%;
-  z-index: -1;
-  transition: opacity 0.3s ease-in-out;
-  opacity: 0;
-}
-.apartment-box:hover::before {
-  opacity: 1;
-  animation: gradient 5s ease infinite;
+  border-color: #ffe0e0;
+  background-color: #ff0000;
 }
 .apartment-box:hover::after {
   content: attr(data-details);
