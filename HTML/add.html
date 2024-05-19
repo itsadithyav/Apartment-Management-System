@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apartment Management System</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/add.css" />
+  </head>
+  <body>
+    <header class="bg-primary text-white text-center py-4">
+      <h1>Apartment Management System</h1>
+    </header>
+    <div class="container my-5">
+      <section class="mt-4">
+        <h2 class="text-primary">Add New Apartment</h2>
+        <form id="add-apartment-form">
+          <div class="form-group">
+            <label for="apartment-number">Apartment Number:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="apartment-number"
+              name="apartment-number"
+              required />
+          </div>
+          <div class="form-group">
+            <label for="bedrooms">Number of Bedrooms:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="bedrooms"
+              name="bedrooms"
+              required />
+          </div>
+          <div class="form-group">
+            <label for="bathrooms">Number of Bathrooms:</label>
+            <input
+              type="number"
+              class="form-control"
+              id="bathrooms"
+              name="bathrooms"
+              required />
+          </div>
+          <button type="submit" class="btn btn-primary">Add Apartment</button>
+        </form>
+      </section>
+    </div>
+    <!-- Bootstrap and dependencies JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
