@@ -7,9 +7,8 @@
     <!-- Bootstrap CSS -->
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../CSS/list.css" />
   </head>
   <body>
     <header class="bg-primary text-white text-center py-4">
@@ -19,9 +18,36 @@
       <section>
         <h2 class="text-primary">List of Apartments</h2>
         <ul class="list-group">
-          <li class="list-group-item">Apartment 101 - 3 Bedrooms, 2 Bathrooms</li>
-          <li class="list-group-item">Apartment 102 - 2 Bedrooms, 1 Bathroom</li>
-          <!-- Add more apartments as needed -->
+          <li class="list-group-item">
+            Apartment 101 - 3 Bedrooms, 2 Bathrooms
+          </li>
+          <li class="list-group-item">
+            Apartment 103 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 102 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 104 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 105 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 106 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 107 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 108 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 109 - 2 Bedrooms, 1 Bathroom
+          </li>
+          <li class="list-group-item">
+            Apartment 110 - 2 Bedrooms, 1 Bathroom
+          </li>
         </ul>
       </section>
       <section class="mt-4">
@@ -34,8 +60,7 @@
               class="form-control"
               id="apartment-number"
               name="apartment-number"
-              required
-            />
+              required />
           </div>
           <div class="form-group">
             <label for="bedrooms">Number of Bedrooms:</label>
@@ -44,8 +69,7 @@
               class="form-control"
               id="bedrooms"
               name="bedrooms"
-              required
-            />
+              required />
           </div>
           <div class="form-group">
             <label for="bathrooms">Number of Bathrooms:</label>
@@ -54,8 +78,7 @@
               class="form-control"
               id="bathrooms"
               name="bathrooms"
-              required
-            />
+              required />
           </div>
           <button type="submit" class="btn btn-primary">Add Apartment</button>
         </form>
@@ -78,8 +101,7 @@
               class="form-control"
               id="tenant-name"
               name="tenant-name"
-              required
-            />
+              required />
           </div>
           <div class="form-group">
             <label for="tenant-apartment">Apartment Number:</label>
@@ -87,8 +109,7 @@
               class="form-control"
               id="tenant-apartment"
               name="tenant-apartment"
-              required
-            >
+              required>
               <option value="101">101</option>
               <option value="102">102</option>
               <!-- Add more apartment options as needed -->
@@ -97,44 +118,7 @@
           <button type="submit" class="btn btn-primary">Add Tenant</button>
         </form>
       </section>
-      <section class="mt-4">
-        <h2 class="text-primary">Apartment Status</h2>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box p-3" data-details="Apartment 101 - John Doe">101</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box issue p-3" data-details="Apartment 102 - Jane Smith">102</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box p-3" data-details="Apartment 103 - Vacant">103</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box issue p-3" data-details="Apartment 104 - Maintenance Required">104</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box p-3" data-details="Apartment 105 - Vacant">105</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box p-3" data-details="Apartment 106 - John Doe">106</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box issue p-3" data-details="Apartment 107 - Jane Smith">107</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box p-3" data-details="Apartment 108 - Vacant">108</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box issue p-3" data-details="Apartment 109 - Maintenance Required">109</div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 mb-4">
-            <div class="apartment-box p-3" data-details="Apartment 110 - Vacant">110</div>
-          </div>
-          <!-- Add more apartment boxes as needed -->
-        </div>
-      </section>
     </div>
-
     <!-- Bootstrap and dependencies JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
