@@ -1,42 +1,83 @@
-## 🏢 Apartment Management System Roadmap (Optional Payment Integration) 🚀
+# Apartment Management System
 
-### 1. Project Setup
-- [✅] 🛠️ Set up a new Angular project in Visual Studio Code.
-- [✅] 📁 Set up basic folder structure for the project.
+Welcome to the Apartment Management System repository! This project is a front-end application that manages apartment listings, tenant information, and maintenance requests. The project is built with HTML, CSS, JavaScript, and Bootstrap, with Google Sheets API serving as the backend.
 
-### 2. Design and Layout
-- [✅] 🎨 Sketch out basic layout for the app using pen and paper or a design tool.
-- [✅] ✏️ Create simple wireframes for each page of the app.
+## Table of Contents
 
-### 3. Create Components
-- [❎] 🧩 Create components for login page, maintenance form, payment page, etc.
-- [❎] 🛠️ Implement basic functionality for each component.
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-### 4. Styling with Bootstrap
-- [❎] 💅 Add Bootstrap to the project for easy styling.
-- [❎] 🎉 Apply Bootstrap classes to components to improve appearance.
+## Project Overview
 
-### 5. User Authentication
-- [❎] 🔒 Implement basic user authentication using Angular's built-in features.
-- [❎] 🔑 Set up simple login form and authentication service.
+The Apartment Management System is a user-friendly application that helps manage apartment listings, tenant details, and maintenance requests. It leverages the simplicity of Google Sheets as a backend to store and manage data.
 
-### 6. Form Handling
-- [❎] 📝 Create form for submitting maintenance payments.
-- [❎] 🛠️ Implement form validation for data accuracy.
+## Features
 
-### 7. Payment Integration (Optional)
-- [❎] 💳 Integrate a payment gateway (e.g., PayPal) for processing payments.
-- [❎] 💰 Implement payment processing functionality.
+- **Apartment Listings:** View and add apartments with details like number of bedrooms, bathrooms, owner name, and phone number.
+- **Tenant Management:** View and add tenant information.
+- **Maintenance Requests:** Submit and track maintenance requests.
+- **Responsive Design:** Built with Bootstrap to ensure responsiveness across various devices.
 
-### 8. Testing
-- [❎] 🧪 Test each feature of the app for functionality and usability.
-- [❎] 🐞 Fix any bugs or issues identified during testing.
+## Installation
 
-### 9. Deployment
-- [❎] 🚀 Deploy the app to a free hosting service (e.g., Firebase Hosting, Netlify).
-- [❎] 🔒 Set up SSL certificate for secure communication (HTTPS).
+To get started with the Apartment Management System, follow these steps:
 
-### 10. Documentation
-- [❎] 📄 Write basic documentation for the project, including installation instructions and usage guidelines.
-- [❎] 📚 Provide simple user manuals and tutorials for using the app effectively.
+1. Clone the repository:
 
+```bash
+git clone https://github.com/your-username/Apartment-Management-System.git
+```
+
+2. Navigate to the project directory:
+
+```bash
+cd Apartment-Management-System
+```
+
+3. Open the index.html file in your web browser.
+
+## Usage
+
+### Adding a New Apartment
+
+1. Navigate to the "Add New Apartment" section.
+2. Fill in the apartment number, number of bedrooms, number of bathrooms, owner name, and phone number.
+3. Click the "Add Apartment" button to submit the form.
+
+### Adding a New Tenant
+
+1. Navigate to the "Add New Tenant" section.
+2. Fill in the tenant name and select the associated apartment number.
+3. Click the "Add Tenant" button to submit the form.
+
+### Viewing Tenant List
+
+1. Click the "View Tenant List" button on the main page.
+2. The tenant list page will show all tenants along with their respective apartment numbers.
+
+## Contributing
+
+Contributions are welcome! To contribute to this project, follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (git checkout -b feature-branch).
+3. Make your changes and commit them (git commit -m 'Add new feature').
+4. Push to the branch (git push origin feature-branch).
+5. Open a Pull Request.
+
+Please ensure your code follows the existing code style and includes relevant tests.
+
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more information.
+
+## Contact
+
+For any questions or feedback, please contact me at adith348@gmail.com.
+        
+Thank you for checking out the Apartment Management System! We hope you find it useful and easy to use.
