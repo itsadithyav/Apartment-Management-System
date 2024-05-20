@@ -19,12 +19,14 @@ body {
   background-size: 600% 600%;
   animation: gradient 100s ease infinite;
 }
+
 header {
   text-align: center;
   padding: 1em;
   color: white;
   width: 100%;
 }
+
 .container {
   max-width: 1200px;
   margin: 20px auto;
@@ -33,18 +35,26 @@ header {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 }
+
 h2 {
   color: #333;
   border-bottom: 2px solid #007bff;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
 }
+
 .apartment-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 10px;
   margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
 }
+
 .apartment-box {
   padding: 20px;
   text-align: center;
@@ -53,10 +63,12 @@ h2 {
   border: 2px solid transparent;
   position: relative;
 }
+
 .apartment-box.issue {
   border-color: #ffe0e0;
   background-color: #ff0000;
 }
+
 .apartment-box:hover::after {
   content: attr(data-details);
   position: absolute;
@@ -70,4 +82,14 @@ h2 {
   white-space: nowrap;
   z-index: 10;
   pointer-events: none;
+}
+
+.issue {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.vacant {
+  background-color: #d4edda;
+  color: #155724;
 }
