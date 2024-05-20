@@ -43,13 +43,7 @@ cd Apartment-Management-System
 
 ## Usage
 
-### Adding a New Apartment
-
-1. Navigate to the "Add New Apartment" section.
-2. Fill in the apartment number, number of bedrooms, number of bathrooms, owner name, and phone number.
-3. Click the "Add Apartment" button to submit the form.
-
-### Adding a New Tenant
+### Adding a New Tenant/Apartment
 
 1. Navigate to the "Add New Tenant" section.
 2. Fill in the tenant name and select the associated apartment number.
