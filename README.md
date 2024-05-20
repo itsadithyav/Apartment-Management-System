@@ -78,6 +78,6 @@ This project is licensed under the MIT License. See the LICENSE file for more in
 
 ## Contact
 
-For any questions or feedback, please contact me at adith348@gmail.com.
+For any questions or feedback, please contact me at adith348@gmail.com or swamyvijayeendra@gmail.com.
         
 Thank you for checking out the Apartment Management System! We hope you find it useful and easy to use.
