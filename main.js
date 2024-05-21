@@ -70,10 +70,10 @@ document
       //console.log("Value range:", data.valueRanges[0]); //Debugging Purposes
       //Returns the expected data
       /*const rows = data.valueRanges[0].values;
-      console.log("Fetched rows:", rows);*/
+      console.log("Fetched rows:", rows);*///Debugging Purposes
       const rows = data.valueRanges[0].values;
       console.log("Fetched rows:", rows); //Debugging Purposes
-      //Why the fuck does it return undefined if the fucking data variable has DATA
+      //Why the hell does it return undefined if the fucking data variable has DATA
 
       const rowIndex = rows.findIndex(
         (row) => row[0] === apartmentNumberToDelete
