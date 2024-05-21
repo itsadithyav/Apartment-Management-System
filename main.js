@@ -1,6 +1,6 @@
-const API_KEY = "AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls"; // Replace with your Google Sheets API key
-const SHEET_ID = "1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U"; // Replace with your Google Sheets ID
-const RANGE = "FormData!A2:G"; // Replace with the actual range of your data
+const API_KEY = "AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls"; // Google Sheets API key
+const SHEET_ID = "1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U"; // Google Sheets ID
+const RANGE = "FormData!A2:G"; // Range of your data
 
 async function fetchSheetData() {
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`;
@@ -97,7 +97,7 @@ async function deleteRow(rowIndex) {
     {
       deleteDimension: {
         range: {
-          sheetId: 0, // Assuming it's the first sheet. Change accordingly.
+          sheetId: 0,
           dimension: "ROWS",
           startIndex: rowIndex,
           endIndex: rowIndex + 1,

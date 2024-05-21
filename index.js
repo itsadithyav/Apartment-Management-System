@@ -4,7 +4,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
   
-    // Hard-coded credentials for demonstration purposes
+    // Hard-coded credentials
     const validUsername = 'admin';
     const validPassword = 'password123';
   
