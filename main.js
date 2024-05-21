@@ -1,10 +1,10 @@
-//const API_KEY = 'YOUR_API_KEY'; // Replace with your Google Sheets API key
-//const SHEET_ID = 'YOUR_SHEET_ID'; // Replace with your Google Sheets ID
-//const RANGE = 'Sheet1!A2:D'; // Replace with the actual range of your data
+const API_KEY = "AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls"; // Replace with your Google Sheets API key
+const SHEET_ID = "1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U"; // Replace with your Google Sheets ID
+const RANGE = "FormData!A2:G"; // Replace with the actual range of your data
 
 async function fetchSheetData() {
-  //const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`;
-  const url = `https://sheets.googleapis.com/v4/spreadsheets/1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U/values/FormData!A2:G?key=AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls`;
+  const url = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values/${RANGE}?key=${API_KEY}`;
+  //const url = `https://sheets.googleapis.com/v4/spreadsheets/1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U/values/FormData!A2:G?key=AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls`;
 
   try {
     const response = await fetch(url);
@@ -63,10 +63,14 @@ document
     ).value;
 
     try {
-      const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U/values/FormData!A2:G?key=AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls`;
+      const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values:batchGet?ranges=${RANGE}&key=${API_KEY}`;
       const response = await fetch(sheetUrl);
       const data = await response.json();
+      console.log("Fetched data:", data);//Debugging Purposes
+      //Returns the expected data
       const rows = data.values;
+      console.log("Fetched rows:", rows);//Debugging Purposes
+      //Why the fuck does it return undefined if the fucking data variable has DATA
 
       const rowIndex = rows.findIndex(
         (row) => row[0] === apartmentNumberToDelete
@@ -99,7 +103,7 @@ async function deleteRow(rowIndex) {
     },
   ];
 
-  const batchUpdateUrl = `https://sheets.googleapis.com/v4/spreadsheets/1mEMrp91VNHyOikTJ_b8-1p9ftM_-Hzo14qf6dzuTO5U:batchUpdate?key=AIzaSyAoFg5p_crG-goL8ZQWT_aHFoETgLx-Zls`;
+  const batchUpdateUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}:batchUpdate?key=${API_KEY}`;
   await fetch(batchUpdateUrl, {
     method: "POST",
     headers: {
