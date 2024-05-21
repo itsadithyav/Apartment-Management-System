@@ -66,10 +66,13 @@ document
       const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/${SHEET_ID}/values:batchGet?ranges=${RANGE}&key=${API_KEY}`;
       const response = await fetch(sheetUrl);
       const data = await response.json();
-      console.log("Fetched data:", data);//Debugging Purposes
+      console.log("Fetched data:", data); //Debugging Purposes
+      //console.log("Value range:", data.valueRanges[0]); //Debugging Purposes
       //Returns the expected data
-      const rows = data.values;
-      console.log("Fetched rows:", rows);//Debugging Purposes
+      /*const rows = data.valueRanges[0].values;
+      console.log("Fetched rows:", rows);*/
+      const rows = data.valueRanges[0].values;
+      console.log("Fetched rows:", rows); //Debugging Purposes
       //Why the fuck does it return undefined if the fucking data variable has DATA
 
       const rowIndex = rows.findIndex(
