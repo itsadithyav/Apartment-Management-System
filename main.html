@@ -13,6 +13,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   </head>
   <body>
+    <script>
+      // Check if the user is authenticated
+      if (localStorage.getItem('authenticated') !== 'true') {
+        window.location.href = 'index.html'; // Redirect to the login page
+      }
+    </script>
     <header class="text-white text-center py-4">
       <nav class="container d-flex flex-row justify-content-between">
         <a class="nav-link active h5" href="#">Apartment Management System</a>
