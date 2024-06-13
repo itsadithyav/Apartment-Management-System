@@ -11,7 +11,7 @@ Thank you for your understanding.
 For historical reference, the source code and documentation will remain accessible in this repository, but no further updates or support will be provided.
 
 ### Contact
-If you have any questions, please contact [adith348@gmail.com].
+If you have any questions, please contact [adith348@gmail.com] [swamyvijayeendra@gmail.com].
 
 ---
 **Deprecation Date:** May, 21, 2024
