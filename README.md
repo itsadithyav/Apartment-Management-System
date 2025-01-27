@@ -1,24 +1,5 @@
 # Apartment Management System
 
-## Deprecated
-
-**Note:** This project has been deprecated and is no longer maintained.
-
-Thank you for your understanding.
-
----
-### Archive
-For historical reference, the source code and documentation will remain accessible in this repository, but no further updates or support will be provided.
-
-### Contact
-If you have any questions, please contact [adith348@gmail.com] [swamyvijayeendra@gmail.com].
-
----
-**Deprecation Date:** May, 21, 2024
-
----
-
-
 Welcome to the Apartment Management System repository! This project is a front-end application that manages apartment listings, tenant information, and maintenance requests. The project is built with HTML, CSS, JavaScript, and Bootstrap, with Google Sheets API serving as the backend.
 
 ## Table of Contents
